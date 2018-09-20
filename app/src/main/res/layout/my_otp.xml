@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/staticNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <include layout="@layout/notification_list_items" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                card_view:cardCornerRadius="@dimen/_5sdp"
+                card_view:cardElevation="@dimen/_2sdp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutForRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:fillViewport="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtOTPLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="OTP"
+                        android:textColor="@color/btnbgcolor"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/textInputLayoutOTP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtOTPLabel"
+                        android:background="@drawable/border">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:theme="@style/cardTheme">
+
+                            <EditText
+                                android:id="@+id/txtOtp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:hint="Enter OTP"
+                                android:inputType="number"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textInputLayoutOTP"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/btnbgcolor"
+                        android:text="Submit"
+                        android:textColor="@color/colorwhite" />
+
+                    <TextView
+                        android:id="@+id/txtTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/btnSubmit"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/txtResendOtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/btnSubmit"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="Resend OTP ?"
+                        android:textColor="#cf3e3e"
+                        android:textSize="@dimen/_14sdp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

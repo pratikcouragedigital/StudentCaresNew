@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/play"
+        android:title="Play"
+        android:icon="@drawable/play"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/pause"
+        android:title="Pause"
+        android:icon="@drawable/pause"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/stop"
+        android:title="Stop"
+        android:icon="@drawable/stop"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/time"
+        android:title="Time"
+        android:icon="@drawable/time"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/date"
+        android:title="Date"
+        android:icon="@drawable/calender_white"
+        app:showAsAction="ifRoom" />
+</menu>

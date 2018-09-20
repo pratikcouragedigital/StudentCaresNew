@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ua_i1_studentHoliday"
+        android:icon="@drawable/student"
+        android:title="Student"/>
+    <item
+        android:id="@+id/ua_i2_staffHoliday"
+        android:icon="@drawable/d_ptamembers"
+        android:title="Staff"/>
+    <item
+        android:id="@+id/ua_i3_addHoliday"
+        android:icon="@drawable/add"
+        android:title="Add Holiday"/>
+</menu>

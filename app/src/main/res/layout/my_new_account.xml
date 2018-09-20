@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/Layout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--3rd Part-->
+                    <RelativeLayout
+                        android:id="@+id/part4RelativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/txtHeadingLabel4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Switch Account"
+                            android:textColor="@color/colorred500"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <ImageView
+                            android:id="@+id/imgArrow4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/chevron_down1" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/lineView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_below="@+id/part4RelativeLayout"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/colorBelowLayout" />
+                    <!-- content Of 3rd Form  -->
+                    <RelativeLayout
+                        android:id="@+id/switchAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_below="@+id/lineView4">
+
+                        <Spinner
+                            android:id="@+id/addAccountSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/colorwhite"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Layout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--1st Part-->
+                    <RelativeLayout
+                        android:id="@+id/part1RelativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/txtHeadingLabel1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Add Account"
+                            android:textColor="@color/colorred500"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <ImageView
+                            android:id="@+id/imgArrow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/chevron_down1" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/lineView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_below="@+id/part1RelativeLayout"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/colorBelowLayout" />
+                    <!-- content Of 1st Form  -->
+                    <RelativeLayout
+                        android:id="@+id/addAccountDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_below="@+id/lineView1">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/textInputLayoutemailorphoneno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:background="@drawable/border"
+                            android:theme="@style/cardTheme">
+
+                            <EditText
+                                android:id="@+id/txtLoginUserId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:hint="New User Id"
+                                android:inputType="number"
+                                android:textSize="@dimen/_14sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/textInputLayoutpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textInputLayoutemailorphoneno"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:background="@drawable/border"
+                            card_view:passwordToggleEnabled="true"
+                            android:theme="@style/cardTheme">
+
+                            <EditText
+                                android:id="@+id/txtLoginpassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:hint="Password"
+                                android:inputType="numberPassword"
+                                android:textSize="@dimen/_14sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btnlogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textInputLayoutpassword"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/btnbgcolor"
+                            android:text="Submit"
+                            android:textColor="#ffffff" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Layout1">
+
+                    <!--2nd Part-->
+                    <RelativeLayout
+                        android:id="@+id/part2RelativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/txtHeadingLabel2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Remove Account"
+                            android:textColor="@color/colorred500"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <ImageView
+                            android:id="@+id/imgArrow2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/chevron_down1" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/lineView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_below="@+id/part2RelativeLayout"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/colorBelowLayout" />
+                    <!-- content Of 2nd Form   -->
+
+                        <RelativeLayout
+                            android:id="@+id/removeAccountDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lineView2"
+                            android:layout_margin="@dimen/_5sdp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/lblSelectChild"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Select User:"
+                                    android:layout_margin="@dimen/_10sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/removeAccountSpinnerLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/lblSelectChild"
+                                    android:background="@drawable/border">
+
+                                    <Spinner
+                                        android:id="@+id/removeAccountSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/_10sdp"
+                                        android:padding="@dimen/_10sdp" />
+
+                                </RelativeLayout>
+
+                                <Button
+                                    android:id="@+id/btnRemoveAccount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/removeAccountSpinnerLayout"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="@dimen/_10sdp"
+                                    android:background="@color/btnbgcolor"
+                                    android:text="Submit"
+                                    android:textColor="#ffffff" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Layout2">
+
+                    <!--3rd Part-->
+                    <RelativeLayout
+                        android:id="@+id/part3RelativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/txtHeadingLabel3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Change Mobile No"
+                            android:textColor="@color/colorred500"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <ImageView
+                            android:id="@+id/imgArrow3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/chevron_down1" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/lineView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_below="@+id/part3RelativeLayout"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/colorBelowLayout" />
+                    <!-- content Of 3rd Form  -->
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:id="@+id/Details3CardView"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/lineView3"-->
+                        <!--android:layout_margin="@dimen/_5sdp">-->
+
+                        <RelativeLayout
+                            android:id="@+id/changeMobileNoLayout"
+                            android:layout_below="@+id/lineView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/textInputLayoutUserId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/cardTheme"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:background="@drawable/border">
+
+                                <EditText
+                                    android:id="@+id/txtuserId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_marginTop="@dimen/_16sdp"
+                                    android:hint="Registration Id"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/_14sdp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/textInputLayoutOldMblNo"
+                                android:layout_below="@+id/textInputLayoutUserId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/cardTheme"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:background="@drawable/border">
+
+                                <EditText
+                                    android:id="@+id/txtOldMblNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_marginTop="@dimen/_16sdp"
+                                    android:hint="Old Mobile No"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/_14sdp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/textInputLayoutMblNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textInputLayoutOldMblNo"
+                                android:theme="@style/cardTheme"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:background="@drawable/border">
+
+                                <EditText
+                                    android:id="@+id/txtMblNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_marginTop="@dimen/_16sdp"
+                                    android:hint="New Mobile No"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/_14sdp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <Button
+                                android:id="@+id/btnSubmit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textInputLayoutMblNo"
+                                android:layout_centerInParent="true"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@color/btnbgcolor"
+                                android:text="Submit"
+                                android:textColor="#ffffff" />
+                        </RelativeLayout>
+                    <!--</android.support.v7.widget.CardView>-->
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/Layout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Layout4">
+
+                    <!--3rd Part-->
+                    <RelativeLayout
+                        android:id="@+id/part5RelativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/txtHeadingLabel5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Share"
+                            android:textColor="@color/colorred500"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/lineView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_below="@+id/part5RelativeLayout"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/colorBelowLayout" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/Layout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Layout4">
+
+                    <!--3rd Part-->
+                    <RelativeLayout
+                        android:id="@+id/part6RelativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/txtHeadingLabel6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Logout"
+                            android:textColor="@color/colorred500"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/lineView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_below="@+id/part6RelativeLayout"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/colorBelowLayout" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <!--</android.support.v7.widget.CardView>-->
+</RelativeLayout>

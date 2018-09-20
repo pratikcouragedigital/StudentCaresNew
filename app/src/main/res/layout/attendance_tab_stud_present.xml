@@ -1,0 +1,92 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/studentPresentCoordinatorLayout"
+    android:background="?android:windowBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/emptyLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emptyTextViewTitle"
+                    android:text="Message.!!!"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emptyTextView"
+                android:layout_below="@+id/titleLayout"
+                android:textColor="@color/colorred500"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="Please Select Standard and Division.Using below Button."
+                android:textSize="@dimen/_14sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/lightgray02"
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/attendansekListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"/>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/mainFabBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:src="@drawable/student_filter_white"
+        app:layout_anchor="@id/attendansekListRecyclerView"
+        app:layout_anchorGravity="bottom|right|end"
+        app:elevation="@dimen/_6sdp"
+        app:layout_behavior="@string/fabBehaviour"
+        app:fabSize="normal"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/attendanceCheckFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        app:layout_behavior="@string/fabBehaviour"
+        android:src="@drawable/form_submit"
+        android:visibility="invisible"
+        app:backgroundTint="@color/mainFabBtnColor"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom|right"
+        app:pressedTranslationZ="12dp" />
+</android.support.design.widget.CoordinatorLayout>

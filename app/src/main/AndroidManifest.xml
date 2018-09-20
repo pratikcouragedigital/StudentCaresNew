@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.studentcares.spps">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_SMS" />
+    <uses-permission-sdk-23 android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".check_OnlineOrOffline.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--to check device is online or offline like youtube-->
+        <receiver
+            android:name=".check_OnlineOrOffline.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="NEWS_CHANNEL" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <receiver android:name=".otpReader.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".internetConnectivity.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".firebase.MyFirebaseMesagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".sliderActivity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity android:name=".Transparent" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/> -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:label="Crop Image"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".dialogBox.NotifyNetworkConnectionMessage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash_Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:label="Login"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_OTP"
+            android:label="OTP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".School_Map"
+            android:label="Map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Full_Image_Activity"
+            android:label="Save Image"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About_StudentCares"
+            android:label="About StudentCares"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About_My_School"
+            android:label="School Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_New_Account"
+            android:label="Manage Account"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_Profile"
+            android:label="Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".School_Feedback"
+            android:label="Feedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".News_List"
+            android:label="News"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Gallery_Title_List"
+            android:label="Gallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Gallery_Event_Wise_Images"
+            android:label="Album"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notice_List"
+            android:label="Notice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notice_Details"
+            android:label="Notice Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_Attendance"
+            android:label="Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Spps_Contact_Form"
+            android:label="Contact Us"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Spps_Feedback_Form"
+            android:label="Feedback"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notification"
+            android:label="Notification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Emergency_Exit"
+            android:label="Emergency Exit" />
+        <activity
+            android:name=".Home_Menu"
+            android:label="Home" />
+        <activity
+            android:name=".DashBoard_Count"
+            android:label="DashBoard" />
+        <activity
+            android:name=".Home_Sub_Menus"
+            android:label="Menu" />
+        <activity
+            android:name=".GPS_Staff_OutWork"
+            android:label="OutWork Location" />
+        <activity
+            android:name=".GPS"
+            android:label="GPS" />
+        <activity
+            android:name=".Assign_Std_Div_Teaching_Staff"
+            android:label="Add Std Div"
+            android:noHistory="true" />
+        <activity
+            android:name=".Machine_Details"
+            android:label="Machine Details" />
+        <activity
+            android:name=".SMS_Send_User_List"
+            android:label="Send SMS"
+            android:noHistory="true"/>
+        <activity
+            android:name=".SMS_Send"
+            android:label="Send SMS"
+            android:noHistory="true"/>
+        <activity
+            android:name=".News_Add"
+            android:label="Add News"/>
+        <activity
+            android:name=".Notice_Add"
+            android:label="Add Notice"/>
+        <activity
+            android:name=".Gallery_Event_Images_Add"
+            android:label="Add Images"/>
+        <activity
+            android:name=".Homework_List_Teacher"
+            android:label="HomeWork List" />
+        <activity
+            android:name=".Homework_List_Parents"
+            android:label="HomeWork List" />
+        <activity
+            android:name=".Homework_Add_Teacher"
+            android:label="HomeWork Add"/>
+        <activity
+            android:name=".PTA_Members_Tab"
+            android:label="PTA Member List" />
+        <activity
+            android:name=".PTA_Send_Msg"
+            android:label="Send Msg To PTA" />
+        <activity
+            android:name=".Fees_Tab"
+            android:label="Fees" />
+        <activity
+            android:name=".Fees_Tab_Parents_Paid_Details"
+            android:label="Fees Details" />
+        <activity
+            android:name=".Holiday"
+            android:label="Holiday" />
+        <activity
+            android:name=".Attendance_Tab_Student"
+            android:label="Student List" />
+        <activity
+            android:name=".Attendance_Tab_Staff"
+            android:label="Staff List" />
+        <activity
+            android:name=".Leave_Apply"
+            android:label="Apply Leave"
+            android:noHistory="true"/>
+        <activity
+            android:name=".Leave_To_Approve_List"
+            android:label="Approve Leave" />
+        <activity
+            android:name=".Leave_List_Own"
+            android:label="Leave List" />
+        <activity
+            android:name=".Study_Material"
+            android:label="Study Material" />
+        <activity
+            android:name=".TimeTable_Student"
+            android:label="Time Table"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".TimeTable_Staff"
+            android:label="Own TimeTable"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".TimeTable_Exam"
+            android:label="Exam TimeTable"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Pin_Enter"
+            android:label="Enter Pin"
+            android:noHistory="true" />
+        <activity
+            android:name=".Pin_Set"
+            android:label="Set Pin"
+            android:noHistory="true" />
+        <activity
+            android:name=".Graph_Tab_Daily"
+            android:label="Daily Graph " />
+        <activity
+            android:name=".Graph_Tab_Monthly"
+            android:label="MonthLy Graph" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity
+            android:name=".SMS_InBox_Tab"
+            android:label="Message" />
+        <activity
+            android:name=".Syllabus"
+            android:label="Syllabus" />
+        <activity
+            android:name=".Rankers"
+            android:label="Ranker" />
+        <activity
+            android:name=".Ranker_Add"
+            android:label="Add Ranker"
+            android:noHistory="true"/>
+        <activity
+            android:name=".SMS_Report"
+            android:label="SMS Report" />
+    </application>
+
+</manifest>

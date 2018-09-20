@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:drawableLeft="@drawable/ic_search_grey_500_24dp"
+            android:id="@+id/txtSearch"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/lightgray02"
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ptaMemRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"/>
+
+        <com.andremion.counterfab.CounterFab
+            android:id="@+id/fabCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_msg_white_24dp"
+            android:visibility="invisible"
+            app:fabSize="normal"
+            app:elevation="6dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:layout_anchor="@id/ptaMemRecyclerView"
+            app:layout_behavior="@string/fabBehaviour"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"/>
+    </RelativeLayout>
+
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fabSendMsg_Notification"-->
+        <!--app:layout_anchor="@id/ptaMemRecyclerView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_gravity="bottom|right"-->
+        <!--android:layout_margin="@dimen/_15sdp"-->
+        <!--android:visibility="invisible"-->
+        <!--android:src="@drawable/ic_msg_white_24dp"-->
+        <!--app:backgroundTint="@color/colorPrimary"-->
+        <!--app:elevation="@dimen/_6sdp"-->
+        <!--app:fabSize="normal"-->
+        <!--app:layout_behavior="@string/fabBehaviour"-->
+        <!--app:layout_anchorGravity="bottom|right" />-->
+
+</LinearLayout>

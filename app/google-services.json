@@ -1,0 +1,1096 @@
+{
+  "project_info": {
+    "project_number": "430556411881",
+    "firebase_url": "https://studentcares-6603d.firebaseio.com",
+    "project_id": "studentcares-6603d",
+    "storage_bucket": "studentcares-6603d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:41d48aad7ade2c0a",
+        "android_client_info": {
+          "package_name": "com.studentcares.aes_wadala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:0f7672ff4b398fdf",
+        "android_client_info": {
+          "package_name": "com.studentcares.akdvs_dharavi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:7aa6ff2bcdd6ff75",
+        "android_client_info": {
+          "package_name": "com.studentcares.akjoshi_thane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:f4b0fbb735f0352f",
+        "android_client_info": {
+          "package_name": "com.studentcares.auxi_bandra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:cc1d9725a9121191",
+        "android_client_info": {
+          "package_name": "com.studentcares.auxi_wadala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:9f3c507e24665d67",
+        "android_client_info": {
+          "package_name": "com.studentcares.babasai_ulhasnagar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:0443e45d47b3e5d2",
+        "android_client_info": {
+          "package_name": "com.studentcares.bes_bhandup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:8ca24ab3935ca6d3",
+        "android_client_info": {
+          "package_name": "com.studentcares.donbosco_nerul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:c422d5ec3bcf3d76",
+        "android_client_info": {
+          "package_name": "com.studentcares.fatima_sewri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:5062ee88330ddb8b",
+        "android_client_info": {
+          "package_name": "com.studentcares.herbon_malad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:d5d7646c9d7315d4",
+        "android_client_info": {
+          "package_name": "com.studentcares.holySpirit_badlapur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:7fbbe6d2aab4e777",
+        "android_client_info": {
+          "package_name": "com.studentcares.kidlandDombivli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:56645b16a441bd55",
+        "android_client_info": {
+          "package_name": "com.studentcares.kumbharkampada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:edc6711899149f27",
+        "android_client_info": {
+          "package_name": "com.studentcares.matunga_premier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:f1809f6a2a6f163d",
+        "android_client_info": {
+          "package_name": "com.studentcares.modelCollegeDombivli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:8ab26ebb55d2479d",
+        "android_client_info": {
+          "package_name": "com.studentcares.nkes_wadala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:c578ec1357f9b92b",
+        "android_client_info": {
+          "package_name": "com.studentcares.ourlady_dadar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:8a88dcb437c1e4a0",
+        "android_client_info": {
+          "package_name": "com.studentcares.pandurangwadi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:1d7a067f359fd3f7",
+        "android_client_info": {
+          "package_name": "com.studentcares.prakash_kandivali"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:3275ebac090052e5",
+        "android_client_info": {
+          "package_name": "com.studentcares.presentation_nerul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:16cdbbbb00163118",
+        "android_client_info": {
+          "package_name": "com.studentcares.pwshs_sion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:893c6d3a37b63193",
+        "android_client_info": {
+          "package_name": "com.studentcares.sacred_heart_santacruz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:dc8276916ca9b1d1",
+        "android_client_info": {
+          "package_name": "com.studentcares.sanatan_gtbnagar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:a0ff95c8dc044b52",
+        "android_client_info": {
+          "package_name": "com.studentcares.sanatan_gtbnagar_hindi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:5dad6be99d0a7191",
+        "android_client_info": {
+          "package_name": "com.studentcares.sitaramEnglish_wadala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:a31eb84f7bcfa9a2",
+        "android_client_info": {
+          "package_name": "com.studentcares.sitaramHindi_wadala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:30234705ea4a0ba0",
+        "android_client_info": {
+          "package_name": "com.studentcares.siws_wadala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:62067e1938688bf4",
+        "android_client_info": {
+          "package_name": "com.studentcares.spps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:1813daee8a3c297b",
+        "android_client_info": {
+          "package_name": "com.studentcares.st_michael_taleigao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:89e32dc6041e5d79",
+        "android_client_info": {
+          "package_name": "com.studentcares.stanthony_versova"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:33621b6c36ba9ad2",
+        "android_client_info": {
+          "package_name": "com.studentcares.stpius_nahur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:e2cdb361bf5e84be",
+        "android_client_info": {
+          "package_name": "com.studentcares.ststeve_koparkhairane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:a041481feb06bd3e",
+        "android_client_info": {
+          "package_name": "com.studentcares.stxavier_vileparle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:100e22b28587da3e",
+        "android_client_info": {
+          "package_name": "com.studentcares.vishnunagar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430556411881:android:1569774077edf372",
+        "android_client_info": {
+          "package_name": "com.studentcares.vivekanand_kurla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430556411881-3goj7ji6qdclhdhu0fmipfrirs11hnaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

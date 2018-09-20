@@ -1,0 +1,87 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detailsCoordinatorLayout">
+
+    <LinearLayout
+        android:background="@color/lightgray02"
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+        <RelativeLayout
+            android:id="@+id/searchLayout"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:drawableLeft="@drawable/ic_search_grey_500_24dp"
+                android:id="@+id/txtSearch"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/studentListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_8sdp"
+            android:clipToPadding="false"/>
+    </LinearLayout>
+
+
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/selectAllUserFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:layout_anchor="@id/studentListRecyclerView"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:src="@drawable/mark_all"
+        app:backgroundTint="@color/colorAccent"
+        app:elevation="6dp"
+        app:layout_behavior="@string/fabBehaviour"
+        app:fabSize="normal"
+        android:visibility="gone"
+        app:layout_anchorGravity="bottom|right"
+        app:pressedTranslationZ="12dp" />
+
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/sendSMSCheckFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:layout_anchor="@id/studentListRecyclerView"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:src="@drawable/form_submit"
+        android:visibility="gone"
+        app:backgroundTint="@color/fabBtnColor"
+        app:elevation="6dp"
+        app:layout_behavior="@string/fabBehaviour"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom|right"
+        app:pressedTranslationZ="12dp" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/sendSMSCheckFab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--app:layout_anchor="@id/studentListRecyclerView"-->
+        <!--android:layout_marginBottom="@dimen/_15sdp"-->
+        <!--android:layout_marginRight="@dimen/_15sdp"-->
+        <!--android:src="@drawable/form_submit"-->
+        <!--android:visibility="invisible"-->
+        <!--app:backgroundTint="@color/fabBtnColor"-->
+        <!--app:elevation="6dp"-->
+        <!--app:layout_behavior="@string/fabBehaviour"-->
+        <!--app:fabSize="normal"-->
+        <!--app:layout_anchorGravity="bottom|right"-->
+        <!--app:pressedTranslationZ="12dp" />-->
+</android.support.design.widget.CoordinatorLayout>

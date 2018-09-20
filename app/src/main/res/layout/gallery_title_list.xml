@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/lightgray02"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/galleryAlbumRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_2sdp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="bottom|right"
+        app:fabSize="normal"
+        app:layout_behavior="@string/fabBehaviour"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_anchor="@id/galleryAlbumRecyclerView"
+        android:src="@drawable/plus_white"
+        android:id="@+id/fabAddEventImages"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:elevation="@dimen/_6sdp"
+        android:layout_gravity="bottom|right"
+        />
+
+</RelativeLayout>
+

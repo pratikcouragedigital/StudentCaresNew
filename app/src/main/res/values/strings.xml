@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">SPPS</string>
+    <string name="schoolId">4</string>
+    <string name="mainFolderName">/spps</string>>
+    <string name="fabBehaviour">com.studentcares.spps.behaviours.ScrollAwareFABBehavior</string>
+
+    <string name="url">http://android.studentcares.net/api/v1/studentcares/</string>
+    <string name="urlSMSReport">"http://vas.gsmash.com/rapi.php?username=sudcar&amp;password=sureshganesh&amp;"</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!--<string name="google_maps_key">AIzaSyAThaN6rzsQJmcXNLWHLw5ES7-C6SQxYKQ</string>-->
+    <string name="google_maps_key">AIzaSyDbT9glv4fwkDe58diwZL5bC0QSOwpwhFQ</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Add_New">Add New</string>
+    <string name="edit">Edit Contact</string>
+    <string name="delete">Delete Contact</string>
+    <string name="title_activity_display_contact">DisplayContact</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="street">Street</string>
+    <string name="country">City/State/Zip</string>
+    <string name="save">Save Contact</string>
+    <string name="deleteContact">Are you sure, you want to delete it.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <string name="permission_rationale">Please grant location permission to start the service</string>
+    <string name="permission_denied_explanation">You have not granted location permission. So the service cannot be started.</string>
+    <string name="settings">settings</string>
+    <string name="title_alert_no_intenet">No internet</string>
+    <string name="msg_alert_no_internet">Please make sure that you have active internet connection.</string>
+    <string name="no_google_playservice_available">No Google Playservice found. Please install it.</string>
+    <string name="msg_location_service_not_started">Location Tracking Not Started</string>
+    <string name="msg_location_service_started">Location Tracking Started</string>
+    <string name="btn_label_refresh">Refresh</string>
+
+    <!--slider activity-->
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="showcase_notice_title">Add Notice</string>
+    <string name="showcase_notice_message">You can add notice for student,staff.by clicking the button shown below.</string>
+
+    <string name="showcase_news_title">Add News/Events</string>
+    <string name="showcase_news_message">You can add News/Events for student,staff.by clicking the button shown below.</string>
+
+    <string name="showcase_homework_title">Sort Homework List</string>
+    <string name="showcase_homework_message">You can sort homework list according to date wise or subject wise.by clicking the button shown below.</string>
+
+    <string name="showcase_t_homework_title">Add / Sort Homework</string>
+    <string name="showcase_t_homework_message">You can add homework. Also you can sort homework list according to date wise or standard, division, subject wise.by clicking the button shown below.</string>
+
+    <string name="showcase_t_absentStudent_title">Absent Student List </string>
+    <string name="showcase_t_absentStudent_message">You can mark absent student to present manually. </string>
+
+    <string name="showcase_attendance_title">Own Attendance Details</string>
+    <string name="showcase_attendance_message">You can check attendance details by clicking on particular date.</string>
+
+    <string name="showcase_ua_absentStudent_title">Absent Student and StaffList </string>
+    <string name="showcase_ua_absentStudent_message">You can mark absent student as well as staff to present manually. </string>
+
+    <string name="showcase_addChild_title">Manage Account </string>
+    <string name="showcase_addChild_message">You can manage your account by clicking on setting button,From here you can add / remove multiple child.also you can change your mobile no.</string>
+
+    <string name="progress_msg">Please Wait.Collecting Data.</string>
+    <string name="title_activity_homework__add">Homework_Add</string>
+
+</resources>

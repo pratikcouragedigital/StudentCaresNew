@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/filterMainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/filterCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/mainFilterLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/rbForAll"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="For All Student And Staff"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <RadioButton
+                                android:id="@+id/chkForStudent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rbForAll"
+                                android:text="For Student"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <RadioButton
+                                android:id="@+id/chkStaff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/chkForStudent"
+                                android:text="For Staff"
+                                android:textSize="@dimen/_15sdp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/studentMainFilterLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mainFilterLayout"
+                            android:layout_margin="@dimen/_5sdp">
+
+                            <RelativeLayout
+                                android:id="@+id/studentFilterLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/rdGroupWise"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:text="Group Wise"
+                                        android:textSize="@dimen/_15sdp" />
+
+                                    <RadioButton
+                                        android:id="@+id/rdStdDivWise"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:text="Class Wise"
+                                        android:textSize="@dimen/_15sdp" />
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/groupFilterLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/studentFilterLayout"
+                                android:layout_margin="@dimen/_10sdp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/forPrePrimary"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Pre-Primary" />
+
+                                        <CheckBox
+                                            android:id="@+id/forPrimary"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Primary" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/forSecondary"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Secondary" />
+
+                                        <CheckBox
+                                            android:id="@+id/forJrCollege"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Jr.College" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/stdDivWiseFilterLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/groupFilterLayout"
+                                android:layout_margin="@dimen/_10sdp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/textview_border">
+
+                                        <Spinner
+                                            android:id="@+id/standard"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="@dimen/_5sdp" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/textview_border">
+
+                                        <Spinner
+                                            android:id="@+id/division"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="@dimen/_5sdp" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/btnFilterOk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/studentMainFilterLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@color/btnbgcolor"
+                            android:text="Ok"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="@dimen/_13sdp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/noticeDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterMainLayout"
+                android:layout_margin="@dimen/_10sdp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/detailsCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/textInputLayoutHeading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/txtHeading"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Notice Heading"
+                                android:inputType="text"
+                                android:textSize="@dimen/_15sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/textInputLayoutDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textInputLayoutHeading"
+                            android:padding="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/txtDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textMultiLine"
+                                android:lines="5"
+                                android:hint="Notice Description..."
+                                android:gravity="top|left"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/textInputLayoutSubmitDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textInputLayoutDescription">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/txtSubmissionDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/calendar_black"
+                                android:hint=" Notice Date"
+                                android:textSize="@dimen/_15sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btnAddImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textInputLayoutSubmitDate"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@color/btnbgcolor"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Add Image"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <Button
+                            android:id="@+id/btnSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textInputLayoutSubmitDate"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_toRightOf="@+id/btnAddImage"
+                            android:background="@color/btnbgcolor"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Submit"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <LinearLayout
+                            android:id="@+id/imageViewLinearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/btnSubmit"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:padding="@dimen/_15sdp"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:id="@+id/firstNoticeImage"
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

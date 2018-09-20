@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.studentcares.spps.About_StudentCares">
+    <item android:id="@+id/contactUs"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/setting_white"
+        android:title="Contact Us"
+        app:actionViewClass="android.widget.ImageView">
+    </item>
+
+    <item android:id="@+id/Add_FeedBack"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/setting_white"
+        android:title="Add Feedback" >
+    </item>
+
+</menu>

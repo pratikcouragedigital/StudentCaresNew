@@ -1,0 +1,269 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/schoolDetailsCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/schoolDetailsAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/schoolDetailsCollapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/schoolHeaderImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:layout_collapseMode="parallax" />
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72sdp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/image_background_gradient" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/schoolDetailsNestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/schoolFirstRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/LinearLayoutForImageButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/schoolDetailCallButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/call24dp"
+                        android:textColor="#CF3E3E" />
+
+                    <View
+                        android:id="@+id/schoolDetailsButtonDivider"
+                        android:layout_width="@dimen/_2sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorBelowLayout" />
+
+                    <ImageButton
+                        android:id="@+id/schoolDetailsRateNReviewButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/rnr24dp"
+                        android:textColor="#CF3E3E" />
+
+                    <View
+                        android:id="@+id/schoolDetailsButtonDivider2"
+                        android:layout_width="@dimen/_2sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorBelowLayout" />
+
+                    <ImageButton
+                        android:id="@+id/schoolDetailsMapButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/map24dp"
+                        android:textColor="#CF3E3E" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/schoolTabButtonDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_below="@+id/LinearLayoutForImageButtons"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/colorBelowLayout" />
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/addresslayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/schoolNameLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="School Name:"
+                    android:textColor="#cf3e3e"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/schoolName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/schoolNameLabel"
+                    android:layout_marginLeft="@dimen/_112sdp"
+                    android:text="V.J.High School" />
+
+                <TextView
+                    android:id="@+id/schoolAddressLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/schoolName"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Address:"
+                    android:textColor="#cf3e3e"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/schoolAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/schoolAddressLabel"
+                    android:layout_marginLeft="@dimen/_112sdp"
+                    android:text="Shivaji Nagar Nandgaon." />
+
+                <TextView
+                    android:id="@+id/schoolContactNoLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/schoolAddress"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Contact No:"
+                    android:textColor="#cf3e3e"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/schoolContactNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/schoolAddress"
+                    android:layout_alignStart="@+id/schoolAddress"
+                    android:layout_alignTop="@+id/schoolContactNoLabel"
+                    android:text="1234567892"
+                    android:textColor="@color/dividerLine"/>
+
+                <TextView
+                    android:id="@+id/schoolEmailLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/schoolContactNo"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Email:"
+                    android:textColor="#cf3e3e"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/schoolEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/schoolContactNo"
+                    android:layout_alignStart="@+id/schoolContactNo"
+                    android:layout_alignTop="@+id/schoolEmailLabel"
+                    android:text="vjhs@gmailcom" />
+
+                <TextView
+                    android:id="@+id/schoolWebsiteLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/schoolEmail"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Website:"
+                    android:textColor="#cf3e3e"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/schoolWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/schoolEmail"
+                    android:layout_alignStart="@+id/schoolEmail"
+                    android:layout_alignTop="@+id/schoolWebsiteLabel"
+                    android:text="www.vjhs.com"
+                    android:textColor="@color/dividerLine"/>
+
+                <View
+                    android:id="@+id/schoolAddressDividerLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_below="@+id/schoolWebsite"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/colorBelowLayout" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reviews:"
+                android:textColor="#cf3e3e"
+                android:id="@+id/reviewsLabel"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:ellipsize="end"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/schoolRateNReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8sdp"
+                android:clipToPadding="false"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

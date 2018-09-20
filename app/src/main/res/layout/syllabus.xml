@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/lightgray02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/spinnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/StandardLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="5"
+                    android:background="@drawable/border">
+
+                    <Spinner
+                        android:id="@+id/spinnerForStandard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="@dimen/_2sdp"-->
+                    <!--android:layout_weight="5"-->
+                    <!--android:background="@drawable/border">-->
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/spinnerForSubject"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="@dimen/_5sdp"-->
+                        <!--android:padding="@dimen/_8sdp"-->
+                        <!--android:textSize="@dimen/_12sdp" />-->
+                <!--</RelativeLayout>-->
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/noteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="italic"
+                android:textColor="@color/colorred500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Note: Click any of the following documents to read."/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pdListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/showPDFContent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<com.github.barteksc.pdfviewer.PDFView-->
+        <!--android:id="@+id/pdfView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+        <!--</RelativeLayout>-->
+
+    </LinearLayout>
+</RelativeLayout>

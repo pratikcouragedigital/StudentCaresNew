@@ -1,0 +1,153 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        card_view:cardCornerRadius="@dimen/_2sdp"
+        card_view:cardElevation="@dimen/_2sdp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainRelativeLayout">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/attendaseListImageAndTittleContentLayout">
+
+                <RelativeLayout
+                    android:id="@+id/studentImageRelativeLayout"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp">
+
+                    <ImageView
+                        android:id="@+id/studentImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/user_logo"
+                        android:layout_marginRight="@dimen/_5sdp"/>
+
+                    <ProgressBar
+                        android:id="@+id/loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/attendaseContentRelativeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/studentImageRelativeLayout">
+
+                    <TextView
+                        android:id="@+id/studentName"
+                        android:text="Pratik Sonawane"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorred500"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:textSize="@dimen/_15sdp"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/standard"
+                        android:text="10th"
+                        android:layout_below="@+id/studentName"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/attLateMark"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/division"
+                        android:text="A"
+                        android:layout_below="@+id/studentName"
+                        android:textColor="@color/attLateMark"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_toRightOf="@+id/standard"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:ellipsize="end"/>
+
+
+                    <TextView
+                        android:id="@+id/lblBalance"
+                        android:text="Balance Fees :"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/standard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:textSize="@dimen/_15sdp"
+                        android:ellipsize="end"/>
+                    <TextView
+                        android:id="@+id/txtBalance"
+                        android:text="1000"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/standard"
+                        android:layout_toRightOf="@+id/lblBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:textSize="@dimen/_15sdp"
+                        android:ellipsize="end"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/studentIdLabel"
+                        android:text="Id: "
+                        android:textColor="@color/colorred500"
+                        android:layout_toLeftOf="@+id/studentId"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/studentId"
+                        android:text="Student Id:"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/colorred500"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:ellipsize="end"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chkAttendanceMark"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/studentId"
+                        android:ellipsize="end"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

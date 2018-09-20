@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="alertDialogListNames">17sp</dimen>
+    <integer name="anim_duration_very_long">1000</integer>
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium">300</integer>
+
+    <dimen name="animationWidth">@dimen/_7sdp</dimen>
+    <dimen name="animationHeight">@dimen/_1sdp</dimen>
+
+    <dimen name="margin">@dimen/_10sdp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+</resources>

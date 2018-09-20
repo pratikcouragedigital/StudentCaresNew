@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/listBgColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/homeworkDetailsCoordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@color/lightgray02"
+                android:id="@+id/containerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/homeworkListRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     />
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/homeworkFilterFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/_15sdp"
+                android:src="@drawable/student_filter_white"
+                app:backgroundTint="@color/colorPrimary"
+                app:elevation="@dimen/_6sdp"
+                app:fabSize="normal"
+                app:layout_behavior="@string/fabBehaviour"
+                app:layout_anchor="@+id/homeworkListRecyclerView"
+                app:layout_anchorGravity="bottom|right" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/dateFilterFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="@dimen/_70sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@drawable/calender_white"
+                android:visibility="invisible"
+                app:backgroundTint="@color/mainFabBtnColor"
+                app:elevation="6dp"
+                app:fabSize="normal"
+                app:layout_anchorGravity="bottom|right"
+                app:pressedTranslationZ="12dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/subjectFilterFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="@dimen/_120sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@drawable/book_white"
+                android:visibility="invisible"
+                app:backgroundTint="@color/mainFabBtnColor"
+                app:elevation="6dp"
+                app:fabSize="normal"
+                app:layout_anchorGravity="bottom|right"
+                app:pressedTranslationZ="12dp" />
+
+        </android.support.design.widget.CoordinatorLayout>
+    </RelativeLayout>
+</FrameLayout>
